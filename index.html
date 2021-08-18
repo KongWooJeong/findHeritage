@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>찾아라!! 문화재</title>
+		<link href="index.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<header>
+			<div class="game-title">
+				<h1>우리나라 문화재 찾기</h1>
+			</div>
+			<div class="wrap-game-start-button">
+				<button type="button" class="game-start-button">게임시작</button>
+			</div>
+		</header>
+		<section>
+			<div class="wrap-main-image">
+				<img class="game-main-image" src="./images/cardBack.png"/>
+			</div>
+			<div class="game-intro game-cotainter none-display">
+				<p class="game-intro-title">난이도를 선택하세요.<p>
+				<div class="game-level-choices">
+					<div class="wrap-level-choice">
+						<button type="button" id="beginner" class="level-choice">초급</button>
+					</div>
+					<div class="wrap-level-choice">
+						<button type="button" id="intermediate" class="level-choice">중급</button>
+					</div>
+					<div class="wrap-level-choice">
+						<button type="button" id="advanced" class="level-choice">고급</button>
+					</div>
+				</div>
+			</div>
+			<div class="game-sub-content none-display">
+				<div class="wrap-game-remain-count">
+					찾아야할 문화재 : <span class="game-remain-correct-count hilight">10</span> 개
+				</div>
+				<div class="wrap-game-timeout">
+					남은시간 : <span class="game-timeout-count hilight">60</span> 초
+				</div>
+				<div class="wrap-game-hint-count">
+					남은 Hint 갯수 : <span class="game-remain-hint-count hilight">3</span> 개
+					<button type="button" class="game-hint-button">Hint</button>
+				</div>
+			</div>
+			<div class="game-cards-container game-cotainter none-display"></div>
+			<div class="game-result-container game-cotainter none-display">
+				<div class="game-result-message"></div>
+				<div class="wrap-game-result-image">
+					<img class="game-result-image" src="" alt="게임결과 이미지"/>
+				</div>
+			</div>
+		</section>
+		<script src="./index.js"></script>
+	</body>
+</html>
